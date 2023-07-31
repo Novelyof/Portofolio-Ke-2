@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+.container-fluid {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 140px;
+    padding-right: 200px;
+    
+}
+
+.navbar {
+    background-color: #232340ff;
+    transition: top 0.3s, opacity 0.3s;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.navbar.hidden {
+    top: -120px;
+    opacity: 0;
+}
+
+.navbar.solid {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+}
+
+.navbar-nav {
+    gap: 56px;
+    display: flex;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    background-image: url("img/1.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.navbar-collapse {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: space-between;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+}  
+.navbar-nav .btn {
+    color: #f5f5f5;
+}
+
+.btn {
+    display: fixed;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(84, 104, 231, 0.5);
+}
+
+.nav-link {
+    color: white; 
+    text-decoration: underline;
+    font-family: 'Lexend Deca';
+}
+
+.content {
+    font-family: 'Lexend Deca';
+    width: 100%;
+    height: 100%;
+    color: #F5F5F5;
+    padding-top: 300px;
+    padding-left: 140px;
+}
+
+.secnd-ctnt {
+    padding-bottom: 56px;
+}
+
+.input-field {
+    font-family: 'Lexend Deca';
+    font-size: 12px;
+    height: 45px;
+    width: 270px;
+    padding-left: 10px;
+}
+
+.fa {
+    color: black;
+    top: 529px;
+    padding-left: 370px;
+    background-color: transparent;
+    position: absolute;
+    left: 3px;
+    padding-top: 10px;
+    border: none;
+}
+
+.btn-getAcc {
+    font-family: 'Lexend Deca';
+    margin-left: 10px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    color: #F5F5F5;
+    border: none;
+    background: rgba(84, 104, 231, 0.8);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex: 0 0 calc(50% - 15px);
+}
+
+.content1, .content2, .content3, .content4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content1_1, .content2_right, .content3_right, .content4_right {
+    width: 45%;
+}
+
+.content1_2, .content2_left, .content3_left, .content4_left {
+    width: 50%;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 568px) {
+    .container {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%;
+    }
+
+    .content1, .content2, .content3, .content4 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content1_1, .content1_2, .content2_left, .content2_right, .content3_left, .content3_right, .content4_left, .content4_right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content1_2 img, .content2_left img, .content3_right img, .content4_left img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    .content1_2 img, .content2_left img, .content3_right img, .content4_left img {
+        width: 70%;
+    }
+}
+
+
+
+
+.testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial{
+    background: #fff;
+    padding: 30px;
+}
+.stars{
+    color: #6ab04c;
+}
+
+.testimonial h5{
+    font-size: 20px;
+}
+
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.testimonial p{
+    font-size: 10px;
+}
